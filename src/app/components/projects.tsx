@@ -155,7 +155,7 @@ const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
-                            className="text-gray-300 text-sm sm:text-base lg:text-lg max-w-md lg:max-w-lg leading-relaxed"
+                            className="text-gray-300 text-sm sm:text-base lg:text-lg pt-8 max-w-md lg:max-w-xl leading-relaxed"
                         >
                             Seja criando uma identidade de marca, projetando um 
                             site ou desenvolvendo materiais de marketing, eu me 
@@ -191,7 +191,7 @@ const Projects = () => {
                     {projects.map((project, index) => (
                         <motion.div
                             key={project.id}
-                            ref={el => projectRefs.current[index] = el}
+                            ref={el => { projectRefs.current[index] = el; }}
                             initial={{ opacity: 0, y: 60 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}

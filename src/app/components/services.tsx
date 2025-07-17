@@ -75,7 +75,7 @@ const Services = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.1 }}
-                            className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tighter"
+                            className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-tighter"
                         >
                             Tenho experiência para resolver problemas reais
                         </motion.h2>

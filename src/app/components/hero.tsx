@@ -205,7 +205,32 @@ const Hero = () => {
 
     return (
         <div id="inicio" className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br rounded-4xl from-yellow-100 via-white to-orange-50">
-            <div className="absolute inset-0 z-0 overflow-hidden">
+           <div className="absolute inset-0 z-0">
+                <div 
+                    className="absolute inset-0 opacity-30"
+                    style={{
+                        backgroundImage: `
+                            linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px)
+                        `,
+                        backgroundSize: '40px 40px'
+                    }}
+                />
+                {/* Smaller grid overlay */}
+                <div 
+                    className="absolute inset-0 opacity-20"
+                    style={{
+                        backgroundImage: `
+                            linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px)
+                        `,
+                        backgroundSize: '10px 10px'
+                    }}
+                />
+            </div>
+
+            {/* Animated Background Elements */}
+            <div className="absolute inset-0 z-10 overflow-hidden">
                 <div className="absolute top-20 left-10 w-32 h-32 bg-yellow-300/20 rounded-full blur-xl animate-pulse"></div>
                 <div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-300/20 rounded-full blur-xl animate-pulse delay-1000"></div>
                 <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-yellow-400/10 rounded-full blur-lg animate-bounce delay-500"></div>
@@ -213,7 +238,7 @@ const Hero = () => {
 
             {/* Desktop Version */}
             <div className="hidden md:block">
-                <div className="mt-48 inset-0 flex items-center justify-start pl-8 lg:pl-16 xl:pl-20 -z-0">
+                <div className="mt-48 inset-0 flex items-center justify-start pl-8 lg:pl-16 xl:pl-20 z-20">
                     <h1 className="animate-text text-[16vw] p-8 font-semibold text-black/80 leading-none tracking-tight select-none whitespace-nowrap pointer-events-none cursor-default">
                         GABRIEL
                     </h1>
@@ -222,7 +247,7 @@ const Hero = () => {
                 <div className="bottom-1/4 left-0 right-0 z-20 flex justify-between items-end w-full px-8 lg:px-16 xl:px-20">
                     <div className="description-text max-w-2xl lg:max-w-md ml-8 lg:ml-16">
                         <p className="text-base lg:text-lg text-black leading-relaxed">
-                            Olá, sou Gabriel, designer no Brazil. Dou vida a ideias inovadoras por meio dos meus designs e programação e colaborações.
+                            Olá, sou Gabriel, designer no Brasil. Dou vida a ideias inovadoras por meio dos meus designs e programação e colaborações.
                         </p>
                     </div>
 
@@ -236,7 +261,7 @@ const Hero = () => {
 
             {/* Mobile Version */}
             <div className="block md:hidden">
-                <div className="absolute inset-0 flex flex-col justify-center items-center z-10 px-4">
+                <div className="absolute inset-0 flex flex-col justify-center items-center z-30 px-4">
                     <h1 className="animate-text text-[60px] xs:text-[80px] sm:text-[100px] font-black text-black/80 leading-none tracking-tight select-none text-center mb-8">
                         GABRIEL
                     </h1>
@@ -251,7 +276,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="scroll-indicator absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20">
+                <div className="scroll-indicator absolute bottom-20 left-1/2 transform -translate-x-1/2 z-30">
                     <div className="flex flex-col items-center">
                         <div className="w-6 h-10 border-2 border-black/60 rounded-full flex justify-center">
                             <div className="w-1 h-3 bg-black/60 rounded-full mt-2 animate-bounce"></div>
@@ -261,7 +286,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center p-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 z-20 w-full">
+            <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center p-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 z-30 w-full">
                 <span className="text-xs sm:text-sm text-black">© Gabriel Dias 2025</span>
                 <span className="text-xs sm:text-sm text-black hidden md:block">
                     (Role para baixo)

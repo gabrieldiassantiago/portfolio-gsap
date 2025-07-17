@@ -9,7 +9,7 @@ export function About() {
                         <span className="text-sm font-medium uppercase text-zinc-500">
                             Sobre mim
                         </span>
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight tracking-tighter">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-tighter">
                             Um mergulho nas experiências e lições aprendidas da minha
                             vida/carreira
                         </h1>
@@ -33,13 +33,10 @@ export function About() {
                                 padrão, que deixa um impacto na vida das pessoas de verdade.</span>
                             </p>
                             <p>
-                                Each experience has not only honed my skills but also deepened my
-                                understanding of the impact design can have on peoples lives. I
-                                believe that good design is not just about making things look
-                                pretty; its about solving problems and enhancing user
-                                experiences. I am always eager to learn and grow, continuously
-                                seeking out new challenges that push the boundaries of my
-                                creativity.
+                                Minha jornada começou cedo, aos 14 anos, quando me apaixonei por
+                                tecnologia e design. Desde então, tenho me dedicado a aprender e
+                                aprimorar minhas habilidades, sempre buscando soluções criativas e
+                                inovadoras para os desafios que enfrento.
                             </p>
                         </div>
                     </div>

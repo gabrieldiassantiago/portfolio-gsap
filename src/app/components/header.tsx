@@ -62,10 +62,12 @@ export default function Header() {
 
     return (
         <nav className="fixed top-4 md:top-8 left-1/2 -translate-x-1/2 z-50 w-auto">
+         
             <div
                 ref={navRef}
                 className="relative flex gap-2  rounded-3xl h-12 md:h-14 bg-black/90 backdrop-blur-sm px-3 md:px-2 text-center justify-center items-center py-2 md:py-3 shadow-lg border border-white/10"
             >
+               
                 <motion.span
                     className="absolute top-1 bottom-1 z-[1] rounded-3xl bg-white/90"
                     animate={{ left: indicator.left, width: indicator.width }}
