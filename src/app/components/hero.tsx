@@ -36,7 +36,7 @@ const Hero = () => {
                 duration: 0.8,
                 stagger: 0.1,
                 ease: 'back.out(1.7)',
-                delay: 0.5,
+                delay: 0,
             });
 
             // Efeito de scramble inicial - troca as letras aleatoriamente
@@ -90,7 +90,7 @@ const Hero = () => {
                     const scrambleStep = () => {
                         if (scrambleSteps < maxSteps) {
                             // Alterna entre caracteres normais e emojis
-                            const useEmoji = Math.random() < 0.5; // 50% chance de emoji
+                            const useEmoji = Math.random() < 0.2; // 20% chance de emoji
                             const randomChar = useEmoji 
                                 ? emojis[Math.floor(Math.random() * emojis.length)]
                                 : scrambleChars[Math.floor(Math.random() * scrambleChars.length)];
@@ -133,7 +133,7 @@ const Hero = () => {
                         direction = -1;
                         currentIndex = totalSpans - 1;
                     } else if (currentIndex <= 0) {
-                        direction = 1;
+                        direction = 1 ;
                         currentIndex = 0;
                     }
                     
@@ -155,7 +155,7 @@ const Hero = () => {
                         const hoverInterval = setInterval(() => {
                             if (hoverScrambles < maxHoverScrambles) {
                                 // Mais chance de emoji no hover
-                                const useEmoji = Math.random() < 0.7; // 70% chance de emoji
+                                const useEmoji = Math.random() < 0.1; // 20% chance de emoji
                                 const randomChar = useEmoji 
                                     ? emojis[Math.floor(Math.random() * emojis.length)]
                                     : scrambleChars[Math.floor(Math.random() * scrambleChars.length)];
