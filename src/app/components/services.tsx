@@ -10,34 +10,33 @@ const services = [
         icon: "/uidesign.svg",
         title: "UI Design",
         description: "Com uma sólida experiência em design de interface de usuário, crio interfaces bonitas e que atendem a necessidade do usuário.",
-        color: "#FFE44B"
+        color: "#FF5722"
     },
     {
         id: 2,
         icon: "/uxresearch.svg",
         title: "UX Research",
         description: "Realizo pesquisas e escuta ativa para entender os usuários, mapear dores e transformar a experiência do usuário",
-        color: "#FFE44B"
+        color: "#FF5722"
     },
     {
         id: 3,
         icon: "/branding.svg",
         title: "Branding Design",
         description: "Transformo ideias em identidades e marcas fortes. Crio marcas que fazem a diferença no mercado, com clareza e emoção.",
-        color: "#FFE44B"
+        color: "#FF5722"
     },
     {
         id: 4,
         icon: "/dev.svg",
         title: "Desenvolvimento Fullstack",
         description: "Crio sites, sistemas e aplicações web/mobile. Prezo por performance, escalabilidade e clareza, entrego o produto pronto.",
-        color: "#FFE44B"
+        color: "#FF5722"
     }
 ];
 
 const Services = () => {
     const renderIcon = (icon: string) => {
-        // Verifica se é um caminho de arquivo (contém .svg, .png, .jpg, etc.)
         if (icon.includes('.')) {
             return (
                 <Image
@@ -45,16 +44,15 @@ const Services = () => {
                     alt="Service icon"
                     width={16}
                     height={16}
-                    className="w-8 h-8 lg:w-6 lg:h-6"
+                    className="w-8 h-8 lg:w-6 lg:h-6 text-white"
                 />
             );
         }
-        // Caso contrário, renderiza como emoji/texto
         return <span className="text-3xl lg:text-4xl">{icon}</span>;
     };
 
     return (
-        <section id="servicos" className="min-h-screen bg-white py-36 text-zinc-900">
+        <section id="servicos" className=" bg-white py-36 text-zinc-900">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start mb-16">
@@ -77,7 +75,7 @@ const Services = () => {
                             transition={{ duration: 0.6, delay: 0.1 }}
                             className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-tighter"
                         >
-                            Tenho experiência para resolver problemas reais
+                           Tenho experiência para resolver problemas reais 
                         </motion.h2>
                     </div>
 
@@ -143,6 +141,7 @@ const Services = () => {
                         </motion.div>
                     ))}
                 </motion.div>
+                
             </div>
         </section>
     );

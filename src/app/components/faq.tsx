@@ -32,7 +32,7 @@ const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section id="contato" className="w-full min-h-screen bg-white py-12 md:py-20">
+        <section id="contato" className="w-full bg-white py-12 md:py-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start justify-between">
                 <div className="w-full md:w-1/2 flex flex-col justify-center mb-10 md:mb-0">
                     <motion.h2
